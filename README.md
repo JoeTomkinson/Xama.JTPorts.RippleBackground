@@ -1,6 +1,6 @@
 # Xamarin RippleBackground
 [![platform](https://img.shields.io/badge/platform-Xamarin.Android-brightgreen.svg)](https://www.xamarin.com/)
-[![API](https://img.shields.io/badge/API-5%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=10s)
+[![API](https://img.shields.io/badge/API-21%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=10s)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # Namespace: Xama.JTPorts.RippleBackground
