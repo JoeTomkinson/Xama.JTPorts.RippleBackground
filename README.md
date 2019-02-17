@@ -43,7 +43,7 @@ Simply define the ripple control in your AXML layout and wrap it around whatever
 </Xama.JTPorts.RippleBackground.RippleBackground>
 ```
 
-The Paint.Color attribute used to draw the circles has been changed to be a static property, so you can set `.RippleColour` on the ripple control programatically and it will apply to all initialised ripples.
+The Paint.Color attribute used in the process of drawing the ripple circles has been changed to be a static property of the `RippleBackground` control. So you can set `.RippleColour` on the ripple control programatically and it will apply to all initialised ripples.
 
 # Available Attributes
 
