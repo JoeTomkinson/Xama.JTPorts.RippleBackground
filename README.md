@@ -8,8 +8,11 @@
 Animated ripple background for Xamarin.Android Ported from a Java library. You can adjust the ripple colours, the speed of the ripples as well as the amount of ripples.
 
 <br>
+## Fill Ripple
+![!gif](https://github.com/DigitalSa1nt/Xama.JTPorts.RippleBackground/blob/master/images/20190217_220639.gif?raw=true)
 
-![!gif]()
+## Stroke Ripple
+![!gif](https://github.com/DigitalSa1nt/Xama.JTPorts.RippleBackground/blob/master/images/20190217_220842.gif?raw=true)
 
 <br>
 
