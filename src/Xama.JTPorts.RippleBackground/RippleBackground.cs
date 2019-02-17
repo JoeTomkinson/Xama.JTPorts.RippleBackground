@@ -18,7 +18,7 @@ namespace Xama.JTPorts.RippleBackground
         protected static float DEFAULT_SCALE = 6.0f;
         protected static int DEFAULT_FILL_TYPE = 0;
 
-        protected int rippleColor;
+        private Color rippleColor;
         protected float rippleStrokeWidth;
         protected float rippleRadius;
         protected int rippleDurationTime;
@@ -26,12 +26,20 @@ namespace Xama.JTPorts.RippleBackground
         protected int rippleDelay;
         protected float rippleScale;
         protected int rippleType;
-        protected Paint paint;
+        protected static Paint paint;
         protected bool animationRunning = false;
         protected AnimatorSet animatorSet;
         protected JavaList<Animator> animatorList;
         protected LayoutParams rippleParams;
         private readonly JavaList<RippleView> rippleViewList = new JavaList<RippleView>();
+
+        public bool RippleOnClick { get; set; }
+
+        public int RippleColour
+        {
+            get { return paint.Color; }
+            set { paint.Color = new Color(value); }
+        }
 
         public bool IsRippleAnimationRunning => animationRunning;
 
@@ -50,26 +58,27 @@ namespace Xama.JTPorts.RippleBackground
             Init(context, attrs);
         }
 
-        private void Init(Context context, IAttributeSet attrs)
+        protected void Init(Context context, IAttributeSet attrs)
         {
             if (IsInEditMode)
             {
                 return;
             }
-            
+
             if (null == attrs)
             {
                 throw new IllegalArgumentException("Attributes should be provided to this view,");
             }
 
             TypedArray typedArray = context.ObtainStyledAttributes(attrs, Resource.Styleable.RippleBackground);
-            rippleColor = typedArray.GetColor(Resource.Styleable.RippleBackground_rb_color, Resource.Color.rippelColor);
+            rippleColor = typedArray.GetColor(Resource.Styleable.RippleBackground_rb_rippleColour, -1);
             rippleStrokeWidth = typedArray.GetDimension(Resource.Styleable.RippleBackground_rb_strokeWidth, Resource.Dimension.rippleStrokeWidth);
             rippleRadius = typedArray.GetDimension(Resource.Styleable.RippleBackground_rb_radius, Resource.Dimension.rippleRadius);
             rippleDurationTime = typedArray.GetInt(Resource.Styleable.RippleBackground_rb_duration, DEFAULT_DURATION_TIME);
             rippleAmount = typedArray.GetInt(Resource.Styleable.RippleBackground_rb_rippleAmount, DEFAULT_RIPPLE_COUNT);
             rippleScale = typedArray.GetFloat(Resource.Styleable.RippleBackground_rb_scale, DEFAULT_SCALE);
             rippleType = typedArray.GetInt(Resource.Styleable.RippleBackground_rb_type, DEFAULT_FILL_TYPE);
+            RippleOnClick = typedArray.GetBoolean(Resource.Styleable.RippleBackground_rb_rippleOnClick, true);
             typedArray.Recycle();
 
             rippleDelay = rippleDurationTime / rippleAmount;
@@ -87,11 +96,19 @@ namespace Xama.JTPorts.RippleBackground
             else
             {
                 paint.SetStyle(Paint.Style.Stroke);
+            }
+
+            // set colour
+            if (rippleColor == -1)
+            {
+                paint.Color = Color.DarkBlue;
+            }
+            else
+            {
                 paint.Color = new Color(rippleColor);
             }
 
             rippleParams = new LayoutParams((int)(2 * (rippleRadius + rippleStrokeWidth)), (int)(2 * (rippleRadius + rippleStrokeWidth)));
-            // changed from TRUE to 1
             rippleParams.AddRule(LayoutRules.CenterInParent, 1);
 
             animatorSet = new AnimatorSet();
@@ -126,7 +143,22 @@ namespace Xama.JTPorts.RippleBackground
                 animatorList.Add(alphaAnimator);
             }
 
+            // set up click event
+            Click += RippleBackground_Click;
+
             animatorSet.PlayTogether(animatorList);
+        }
+
+        private void RippleBackground_Click(object sender, System.EventArgs e)
+        {
+            if (IsRippleAnimationRunning)
+            {
+                StopRippleAnimation();
+            }
+            else
+            {
+                StartRippleAnimation();
+            }
         }
 
         public void StartRippleAnimation()
@@ -147,6 +179,10 @@ namespace Xama.JTPorts.RippleBackground
             if (IsRippleAnimationRunning)
             {
                 animatorSet.End();
+                foreach (RippleView rippleView in rippleViewList)
+                {
+                    rippleView.Visibility = Android.Views.ViewStates.Invisible;
+                }
                 animationRunning = false;
             }
         }

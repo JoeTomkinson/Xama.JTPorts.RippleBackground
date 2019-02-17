@@ -607,26 +607,29 @@ namespace Xama.JTPorts.RippleBackground
 			// aapt resource value: 0x7f0100a1
 			public static int ratingBarStyleSmall = 2130772129;
 			
-			// aapt resource value: 0x7f0100ff
-			public static int rb_color = 2130772223;
+			// aapt resource value: 0x7f010103
+			public static int rb_duration = 2130772227;
 			
 			// aapt resource value: 0x7f010102
-			public static int rb_duration = 2130772226;
-			
-			// aapt resource value: 0x7f010101
-			public static int rb_radius = 2130772225;
-			
-			// aapt resource value: 0x7f010103
-			public static int rb_rippleAmount = 2130772227;
+			public static int rb_radius = 2130772226;
 			
 			// aapt resource value: 0x7f010104
-			public static int rb_scale = 2130772228;
+			public static int rb_rippleAmount = 2130772228;
 			
 			// aapt resource value: 0x7f010100
-			public static int rb_strokeWidth = 2130772224;
+			public static int rb_rippleColour = 2130772224;
+			
+			// aapt resource value: 0x7f0100ff
+			public static int rb_rippleOnClick = 2130772223;
 			
 			// aapt resource value: 0x7f010105
-			public static int rb_type = 2130772229;
+			public static int rb_scale = 2130772229;
+			
+			// aapt resource value: 0x7f010101
+			public static int rb_strokeWidth = 2130772225;
+			
+			// aapt resource value: 0x7f010106
+			public static int rb_type = 2130772230;
 			
 			// aapt resource value: 0x7f0100cf
 			public static int searchHintIcon = 2130772175;
@@ -903,44 +906,44 @@ namespace Xama.JTPorts.RippleBackground
 		public partial class Color
 		{
 			
+			// aapt resource value: 0x7f09003e
+			public static int abc_background_cache_hint_selector_material_dark = 2131296318;
+			
 			// aapt resource value: 0x7f09003f
-			public static int abc_background_cache_hint_selector_material_dark = 2131296319;
+			public static int abc_background_cache_hint_selector_material_light = 2131296319;
 			
 			// aapt resource value: 0x7f090040
-			public static int abc_background_cache_hint_selector_material_light = 2131296320;
+			public static int abc_btn_colored_borderless_text_material = 2131296320;
 			
 			// aapt resource value: 0x7f090041
-			public static int abc_btn_colored_borderless_text_material = 2131296321;
+			public static int abc_btn_colored_text_material = 2131296321;
 			
 			// aapt resource value: 0x7f090042
-			public static int abc_btn_colored_text_material = 2131296322;
+			public static int abc_color_highlight_material = 2131296322;
 			
 			// aapt resource value: 0x7f090043
-			public static int abc_color_highlight_material = 2131296323;
+			public static int abc_hint_foreground_material_dark = 2131296323;
 			
 			// aapt resource value: 0x7f090044
-			public static int abc_hint_foreground_material_dark = 2131296324;
-			
-			// aapt resource value: 0x7f090045
-			public static int abc_hint_foreground_material_light = 2131296325;
+			public static int abc_hint_foreground_material_light = 2131296324;
 			
 			// aapt resource value: 0x7f090000
 			public static int abc_input_method_navigation_guard = 2131296256;
 			
+			// aapt resource value: 0x7f090045
+			public static int abc_primary_text_disable_only_material_dark = 2131296325;
+			
 			// aapt resource value: 0x7f090046
-			public static int abc_primary_text_disable_only_material_dark = 2131296326;
+			public static int abc_primary_text_disable_only_material_light = 2131296326;
 			
 			// aapt resource value: 0x7f090047
-			public static int abc_primary_text_disable_only_material_light = 2131296327;
+			public static int abc_primary_text_material_dark = 2131296327;
 			
 			// aapt resource value: 0x7f090048
-			public static int abc_primary_text_material_dark = 2131296328;
+			public static int abc_primary_text_material_light = 2131296328;
 			
 			// aapt resource value: 0x7f090049
-			public static int abc_primary_text_material_light = 2131296329;
-			
-			// aapt resource value: 0x7f09004a
-			public static int abc_search_url_text = 2131296330;
+			public static int abc_search_url_text = 2131296329;
 			
 			// aapt resource value: 0x7f090001
 			public static int abc_search_url_text_normal = 2131296257;
@@ -951,29 +954,29 @@ namespace Xama.JTPorts.RippleBackground
 			// aapt resource value: 0x7f090003
 			public static int abc_search_url_text_selected = 2131296259;
 			
+			// aapt resource value: 0x7f09004a
+			public static int abc_secondary_text_material_dark = 2131296330;
+			
 			// aapt resource value: 0x7f09004b
-			public static int abc_secondary_text_material_dark = 2131296331;
+			public static int abc_secondary_text_material_light = 2131296331;
 			
 			// aapt resource value: 0x7f09004c
-			public static int abc_secondary_text_material_light = 2131296332;
+			public static int abc_tint_btn_checkable = 2131296332;
 			
 			// aapt resource value: 0x7f09004d
-			public static int abc_tint_btn_checkable = 2131296333;
+			public static int abc_tint_default = 2131296333;
 			
 			// aapt resource value: 0x7f09004e
-			public static int abc_tint_default = 2131296334;
+			public static int abc_tint_edittext = 2131296334;
 			
 			// aapt resource value: 0x7f09004f
-			public static int abc_tint_edittext = 2131296335;
+			public static int abc_tint_seek_thumb = 2131296335;
 			
 			// aapt resource value: 0x7f090050
-			public static int abc_tint_seek_thumb = 2131296336;
+			public static int abc_tint_spinner = 2131296336;
 			
 			// aapt resource value: 0x7f090051
-			public static int abc_tint_spinner = 2131296337;
-			
-			// aapt resource value: 0x7f090052
-			public static int abc_tint_switch_track = 2131296338;
+			public static int abc_tint_switch_track = 2131296337;
 			
 			// aapt resource value: 0x7f090004
 			public static int accent_material_dark = 2131296260;
@@ -1113,9 +1116,6 @@ namespace Xama.JTPorts.RippleBackground
 			// aapt resource value: 0x7f09002e
 			public static int primary_text_disabled_material_light = 2131296302;
 			
-			// aapt resource value: 0x7f09003e
-			public static int rippelColor = 2131296318;
-			
 			// aapt resource value: 0x7f09002f
 			public static int ripple_material_dark = 2131296303;
 			
@@ -1140,11 +1140,11 @@ namespace Xama.JTPorts.RippleBackground
 			// aapt resource value: 0x7f090036
 			public static int switch_thumb_disabled_material_light = 2131296310;
 			
-			// aapt resource value: 0x7f090053
-			public static int switch_thumb_material_dark = 2131296339;
+			// aapt resource value: 0x7f090052
+			public static int switch_thumb_material_dark = 2131296338;
 			
-			// aapt resource value: 0x7f090054
-			public static int switch_thumb_material_light = 2131296340;
+			// aapt resource value: 0x7f090053
+			public static int switch_thumb_material_light = 2131296339;
 			
 			// aapt resource value: 0x7f090037
 			public static int switch_thumb_normal_material_dark = 2131296311;
@@ -4735,28 +4735,32 @@ namespace Xama.JTPorts.RippleBackground
 					2130772226,
 					2130772227,
 					2130772228,
-					2130772229};
-			
-			// aapt resource value: 0
-			public static int RippleBackground_rb_color = 0;
-			
-			// aapt resource value: 3
-			public static int RippleBackground_rb_duration = 3;
-			
-			// aapt resource value: 2
-			public static int RippleBackground_rb_radius = 2;
+					2130772229,
+					2130772230};
 			
 			// aapt resource value: 4
-			public static int RippleBackground_rb_rippleAmount = 4;
+			public static int RippleBackground_rb_duration = 4;
+			
+			// aapt resource value: 3
+			public static int RippleBackground_rb_radius = 3;
 			
 			// aapt resource value: 5
-			public static int RippleBackground_rb_scale = 5;
+			public static int RippleBackground_rb_rippleAmount = 5;
 			
 			// aapt resource value: 1
-			public static int RippleBackground_rb_strokeWidth = 1;
+			public static int RippleBackground_rb_rippleColour = 1;
+			
+			// aapt resource value: 0
+			public static int RippleBackground_rb_rippleOnClick = 0;
 			
 			// aapt resource value: 6
-			public static int RippleBackground_rb_type = 6;
+			public static int RippleBackground_rb_scale = 6;
+			
+			// aapt resource value: 2
+			public static int RippleBackground_rb_strokeWidth = 2;
+			
+			// aapt resource value: 7
+			public static int RippleBackground_rb_type = 7;
 			
 			public static int[] SearchView = new int[] {
 					16842970,

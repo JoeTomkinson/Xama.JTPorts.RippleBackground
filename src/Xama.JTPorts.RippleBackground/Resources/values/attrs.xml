@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
   <declare-styleable name="RippleBackground">
-    <attr name="rb_color" format="color" />
+    <attr name="rb_rippleOnClick" format="boolean" />
+    <attr name="rb_rippleColour" format="color|reference" />
     <attr name="rb_strokeWidth" format="dimension"/>
     <attr name="rb_radius" format="dimension"/>
     <attr name="rb_duration" format="integer"/>
