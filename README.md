@@ -15,6 +15,10 @@ Animated ripple background for Xamarin.Android Ported from a Java library. You c
 
 ![!gif](https://github.com/DigitalSa1nt/Xama.JTPorts.RippleBackground/blob/master/images/20190217_220842.gif?raw=true)
 
+# How to Install
+
+At the moment, until I create the nuget package you would need to download the src code, compile and build it, then simply reference the DLL in your Xamarin.Android Project. Or alternatively you could add the project as a project within your solution if you plan on adjusting any of the code for your own uses.
+
 # Basic Usage
 
 Simply define the ripple control in your AXML layout and wrap it around whatever you want. You can set the control to ripple on click, or you can disable that via the attribute 'rb_rippleOnClick' and set up your own way of starting the ripple effect by simply calling the following method `StartRippleAnimation();` on the ripple control object.
