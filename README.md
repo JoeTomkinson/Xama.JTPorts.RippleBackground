@@ -17,7 +17,15 @@ Animated ripple background for Xamarin.Android Ported from a Java library. You c
 
 # How to Install
 
-At the moment, until I create the nuget package you would need to download the src code, compile and build it, then simply reference the DLL in your Xamarin.Android Project. Or alternatively you could add the project as a project within your solution if you plan on adjusting any of the code for your own uses.
+![NuGetIcon](https://raw.githubusercontent.com/DigitalSa1nt/Xama.JTPorts.RippleBackground/master/images/nugetIcon.png)
+
+Simply add the [NuGet package](https://www.nuget.org/packages/Xama.JTPorts.RippleBackground/) directly to your Xamarin.Android solution, or use one of the following:
+
+Package Manager:
+> Install-Package Xama.JTPorts.RippleBackground -Version 1.0.0
+
+.NET CLI:
+> dotnet add package Xama.JTPorts.RippleBackground --version 1.0.0
 
 # Basic Usage
 
